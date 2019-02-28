@@ -16,51 +16,44 @@
         <div class="row calculator" style="text-align:center; margin: 50px">
             <div class="col-md-12 tombol">
                 <div class="row">
-                    <div class="col-md-4">
-                        <label for="operator-one">Bilangan Pertama</label>
-                        <input type="text" id="operator-one" class="form-control">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="operator-two">Operator</label>
-                        <input type="text" id="operator-two" class="form-control" disabled>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="operator-three">Bilangan Kedua</label>
-                        <input type="text" id="operator-three" class="form-control">
+                    <div class="col-md-12">
+                        <label for="operator-one">Calculate</label>
+                        <input type="text" id="txtCalculation" class="form-control" readonly>
                     </div>
                 </div>
                 <br>
                 <label for="txtResult">Hasil</label>
-                <input type="text" id="txtResutl" class="form-control" width="150" />
+                <input type="text" id="txtResult" class="form-control" width="150" readonly/>
             </div>
             <div class="col-md-12 tombol">
-                <button class="btn btn-cal" id="btn-1">1</button>
-                <button class="btn btn-cal" id="btn-2">2</button>
-                <button class="btn btn-cal" id="btn-3">3</button>
-                <button class="btn btn-cal" id="btn-plus">+</button>
+                <button class="btn btn-cal" onclick="addText('1')">1</button>
+                <button class="btn btn-cal" onclick="addText('2')">2</button>
+                <button class="btn btn-cal" onclick="addText('3')">3</button>
+                <button class="btn btn-cal" onclick="addText('+')">+</button>
 
             </div>
             <div class="col-md-12 tombol">
-                <button class="btn btn-cal">4</button>
-                <button class="btn btn-cal">5</button>
-                <button class="btn btn-cal">6</button>
-                <button class="btn btn-cal" id="btn-min">-</button>
+                <button class="btn btn-cal" onclick="addText('4')">4</button>
+                <button class="btn btn-cal" onclick="addText('5')">5</button>
+                <button class="btn btn-cal" onclick="addText('6')">6</button>
+                <button class="btn btn-cal" onclick="addText('-')">-</button>
             </div>
 
             <div class="col-md-12 tombol">
-                <button class="btn btn-cal">7</button>
-                <button class="btn btn-cal">8</button>
-                <button class="btn btn-cal">9</button>
-                <button class="btn btn-cal" id="btn-star">*</button>
+                <button class="btn btn-cal" onclick="addText('7')">7</button>
+                <button class="btn btn-cal" onclick="addText('8')">8</button>
+                <button class="btn btn-cal" onclick="addText('9')">9</button>
+                <button class="btn btn-cal" onclick="addText('*')">*</button>
             </div>
             <div class="col-md-12 tombol">
-                <button class="btn btn-danger btn-cal">C</button>
-                <button class="btn btn-cal">0</button>
-                <button class="btn btn-cal">=</button>
-                <button class="btn btn-cal">/</button>
+                <button class="btn btn-danger btn-cal" onclick="clearAll()">C</button>
+                <button class="btn btn-cal" onclick="addText('0')">0</button>
+                <button class="btn btn-cal" onclick="equalButton()">=</button>
+                <button class="btn btn-cal" onclick="addText('/')">/</button>
             </div>
         </div>
     </div>
+    <script src="./assets/js/custom.js"></script>
 </body>
 
 </html>

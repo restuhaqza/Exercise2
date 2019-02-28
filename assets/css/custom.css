@@ -2,6 +2,10 @@ body{
     background-color: black;
 }
 
+input{
+    text-align: center;
+}
+
 .calculator{
     background-color:white;
     padding: 25px;

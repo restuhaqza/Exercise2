@@ -1,10 +1,13 @@
-function trigButton(value){
-    var form = document.getElementById('txtCalculation')
-    console.log(parseFloat(form.value))
-    console.log(form.value)
-    console.log(value)
+function equalButton(){
+    var valueOfCalculate = document.getElementById("txtCalculation").value;
+    document.getElementById("txtResult").value = eval(valueOfCalculate);
 }
 
-function equalButton(){
+function addText(val){
+    document.getElementById('txtCalculation').value += val;
+}
 
+function clearAll(){
+  document.getElementById("txtCalculation").value = "";
+  document.getElementById("txtResult").value = ""
 }
